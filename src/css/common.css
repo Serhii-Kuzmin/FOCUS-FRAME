@@ -1,0 +1,141 @@
+/* Variables*/
+
+:root {
+  scroll-behavior: smooth;
+  --black-color: #121212;
+  --dark-grey-color: #1d1d1d;
+  --black-grey-gradient: linear-gradient(180deg, #060707 0%, #1d1d1d 100%);
+  --brown-color: #bea69e;
+  --white-color: #fff;
+}
+
+/* MOBILE */
+body {
+  font-family: DM Sans, sans-serif;
+  font-size: 14px;
+  line-height: 1.29;
+  letter-spacing: -0.02em;
+  color: var(--white-color);
+  background-color: var(--black-color);
+  background-image: url('../images/background/bckg-mobile-top.png');
+  background-position: top;
+  background-size: initial;
+  background-repeat: repeat-x;
+}
+svg {
+  display: block;
+}
+
+@media only screen and (min-resolution: 192dpi) {
+  body {
+    background-image: url('../images/background/bckg-mobile-top@2x.png');
+    background-size: auto 947px;
+  }
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.container {
+  min-width: 320px;
+  max-width: 355px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+.section {
+  padding: 40px 0;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: -0.04em;
+  text-transform: capitalize;
+}
+
+.accent-title {
+  color: var(--brown-color);
+}
+
+/* TABLET */
+
+@media only screen and (min-width: 768px) {
+  body {
+    background-image: url('../images/background/bckg-tablet-top.png');
+  }
+
+  @media only screen and (min-resolution: 192dpi) {
+    body {
+      background-image: url('../images/background/bckg-tablet-top@2x.png');
+      background-size: auto 1120px;
+    }
+  }
+
+  .container {
+    max-width: 736px;
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 50px 0;
+  }
+
+  .section-title {
+    font-size: 48px;
+    line-height: 1.12;
+  }
+}
+
+/* DESKTOP 1280*/
+@media only screen and (min-width: 1280px) {
+  body {
+    background-image: url('../images/background/bckg-dt-1280-top.png');
+  }
+
+  @media only screen and (min-resolution: 192dpi) {
+    body {
+      background-image: url('../images/background/bckg-dt-1280-top@2x.png');
+      background-size: auto 909px;
+    }
+  }
+
+  .container {
+    max-width: 1110px;
+    padding: 0 15px;
+  }
+
+  .section {
+    padding: 75px 0;
+  }
+}
+
+/* DESKTOP 1440*/
+
+@media only screen and (min-width: 1440px) {
+  .container {
+    max-width: 1270px;
+  }
+
+  body {
+    background-image: url('../images/background/bckg-dt-1440-top.png');
+  }
+
+  @media only screen and (min-resolution: 192dpi) {
+    body {
+      background-image: url('../images/background/bckg-dt-1440-top@2x.png');
+      background-size: auto 910px;
+    }
+  }
+}
