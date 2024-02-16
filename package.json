@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/https:/Serhii-Kuzmin/FOCUS.FRAME/",
+    "build": "vite build --base=/FOCUS.FRAME/",
     "preview": "vite preview"
   },
   "devDependencies": {
